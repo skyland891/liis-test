@@ -1,0 +1,123 @@
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/form-wrapper.png);
+    background-color: rgba(255, 255, 255, 0.6);
+    background-size: cover;
+    padding: 0 16px;
+}
+
+.form-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    max-width: 409px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #424242;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form__email-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__password-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.password__input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    width: 100%;
+    max-height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #C9CACC;
+    border-radius: 4px;
+    margin-bottom: 32px;
+}
+
+.email__input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #C9CACC;
+    border-radius: 4px;
+    margin-bottom: 24px;
+}
+
+.email__input-label {
+    display: block;
+    margin: 7px 0px;
+}
+
+.password__input-label {
+    display: block;
+    margin: 7px 0px;
+}
+
+.form__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.form__button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
+    cursor: pointer;
+}
+
+.form__button:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
+    cursor: pointer;
+}
