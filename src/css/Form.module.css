@@ -43,12 +43,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 24px;
 }
 
 .form__password-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 32px;
 }
 
 .title {
@@ -71,7 +73,7 @@
     background: #FFFFFF;
     border: 1px solid #C9CACC;
     border-radius: 4px;
-    margin-bottom: 32px;
+    margin-bottom: 7px;
 }
 
 .email__input {
@@ -84,7 +86,7 @@
     background: #FFFFFF;
     border: 1px solid #C9CACC;
     border-radius: 4px;
-    margin-bottom: 24px;
+    margin-bottom: 7px;
 }
 
 .email__input-label {
@@ -120,4 +122,50 @@
 .form__button:active {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(104.34deg, #41522E -15.34%, #BE8022 145.95%);
     cursor: pointer;
+}
+
+.validate__error {
+    color: #EB1717;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.invalid__email-label {
+    display: block;
+    margin: 7px 0px;
+    color: #EB1717;
+}
+
+.invalid__password-label {
+    display: block;
+    margin: 7px 0px;
+    color: #EB1717;
+}
+
+.invalid__email-input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #C9CACC;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    color: #EB1717;
+}
+
+.invalid__password-input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    width: 100%;
+    max-height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #C9CACC;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    color: #EB1717;
 }

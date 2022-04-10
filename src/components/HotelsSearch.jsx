@@ -3,11 +3,13 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Navigate} from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth'
 import { loadingEnd } from '../store/authReducer';
+import Loading from './Loading';
 
 function HotelsSearch() {
     const dispatch = useDispatch();
     const { isAuth, email } = useAuth();
-    const isLoading = useSelector(state => state.authReducer.loading);
+    const isLoading = useSelector(store => store.authReducer.loading);
+    const setUserError = useSelector(store => store.userReducer.setUserError);
     if(isAuth) {
         dispatch(loadingEnd());
         return (
@@ -18,7 +20,11 @@ function HotelsSearch() {
     }
     else {
         if(isLoading) {
-            return <div>ЗАГРУЗКА...</div>
+            if(setUserError) {
+                dispatch(loadingEnd());
+                return <Navigate replace to='/login'/>
+            }
+            return <Loading/>
         }
         return (
             <Navigate replace to='/login'/>
