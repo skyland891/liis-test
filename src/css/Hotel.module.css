@@ -1,0 +1,163 @@
+.container {
+    position: relative;
+    padding: 20px 16px 16px 88px;
+    background: url(../img/Group.png) no-repeat;
+    background-position: 16px 32px;
+}
+
+.container__fav {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.container::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    background-color: rgba(65, 82, 46, 0.05);
+}
+
+.name {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.date__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #878787;
+}
+
+.price__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+.price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #424242;
+    text-align: right;
+}
+
+.container__1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10px;
+    gap:  10px;
+}
+
+.container__2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fav__heart {
+    cursor: pointer;
+    position: relative;
+    width: 10px;
+    height: 20px;
+    background-color: #E55858;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(315deg);
+}
+
+.fav__heart:before {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 12px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color: #E55858;
+    border-radius: 0 50px 50px 0;
+}
+
+
+.fav__heart:focus, .fav__heart:focus-visible {
+    border: none;
+}
+
+.heart {
+    position: relative;
+    width: 10px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(315deg);
+}
+
+.heart:before {
+    position: absolute;
+    width: 20px;
+    height: 13px;
+    left: -1px;
+    bottom: -3px;
+    content: "";
+    background-color: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 0 50px 50px 0;
+}
+
+.heart::after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    bottom: -2px;
+    content: "";
+    background-color: #FFFFFF;
+    border-radius: 0 50px 50px 0;
+}
+
+.heart:hover {
+    cursor: pointer;
+    background-color: #EBEBEB;
+}
+
+.heart:hover::after {
+    cursor: pointer;
+    background-color: #EBEBEB;
+}
+
+.heart:hover::before {
+    cursor: pointer;
+    background-color: #EBEBEB;
+}
+
+.heart:target {
+    cursor: pointer;
+    background-color: #E55858;
+}
+
+.heart:target::after {
+    cursor: pointer;
+    background-color: #E55858;
+}
+
+.heart:target::before {
+    cursor: pointer;
+    background-color: #E55858;
+}
+
+.heart:focus, .heart:focus-visible {
+    border: 1px solid #C4C4C4;
+}

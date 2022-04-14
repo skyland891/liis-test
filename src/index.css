@@ -13,3 +13,8 @@ button {
     border: none;
     background-color: inherit;
 }
+
+p {
+    margin: 0;
+    display: inline;
+}
